@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website.
 This site highlights my projects, technical skills, and work as a Computer Science student.
 
-🔗 **Live Website:** https://nithilamandiw.github.io
+🔗 **Live Website:** https://nithilamandiw.github.io / https://nithila.dev
 
 ---
 
