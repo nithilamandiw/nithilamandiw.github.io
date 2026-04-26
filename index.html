@@ -5,45 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithila Thiranagama - Portfolio</title>
-    <meta name="description" content="Nithila Thiranagama - Aspiring Cloud & DevOps Engineer. Portfolio showcasing projects, skills, and experience.">
+    <meta name="description"
+        content="Nithila Thiranagama - Aspiring Cloud & DevOps Engineer. Portfolio showcasing projects, skills, and experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+    <!-- tsParticles Background -->
+    <div id="tsparticles"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
     <div class="blob b1"></div>
     <div class="blob b2"></div>
     <div class="blob b3"></div>
 
-    <nav>
-        <a href="#hero" class="logo"><img src="assets/images/logo.jpg" alt="Nithila Thiranagama Logo"></a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo"><img src="assets/images/logo.jpg" alt="Nithila Thiranagama Logo"></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
 
     <main>
 
         <!-- HERO -->
-        <section id="hero">
-            <div class="badge-row">
+        <section id="hero" class="reveal">
+            <div class="badge-row reveal delay-1">
                 <span class="badge badge-green"><span class="dot dot-green"></span>Open to Internships</span>
                 <span class="badge badge-blue">BSc Computer Science · UoW</span>
                 <span class="badge badge-purple">Galle, Sri Lanka</span>
             </div>
-            <h1>Hi, I'm<br><span class="grad-text">Nithila Thiranagama</span></h1>
-            <div class="role-anim" id="role-anim">I build <span id="role-word">CI/CD pipelines</span></div>
-            <p class="hero-desc">Aspiring Cloud & DevOps Engineer passionate about automating everything, deploying on
+            <h1 class="reveal delay-2">Hi, I'm<br><span class="grad-text">Nithila Thiranagama</span></h1>
+            <div class="role-anim reveal delay-3" id="role-anim">I build <span id="role-word">CI/CD pipelines</span>
+            </div>
+            <p class="hero-desc reveal delay-4">Aspiring Cloud & DevOps Engineer passionate about automating everything,
+                deploying on
                 Linux/VPS, and building full-stack products. Freelancing since 2019, shipping bots & pipelines since
                 2021.</p>
-            <div class="btn-row">
+            <div class="btn-row reveal delay-5">
                 <a href="https://github.com/nithilamandiw" class="btn btn-primary" target="_blank">View GitHub</a>
                 <a href="mailto:nithilamandiw@gmail.com" class="btn btn-outline">Email Me</a>
-                <a href="nithila-madiw.pdf" class="btn btn-cv" download="nithila-thiranagama-cv.pdf"><svg viewBox="0 0 24 24">
+                <a href="nithila-madiw.pdf" class="btn btn-cv" download="nithila-thiranagama-cv.pdf"><svg
+                        viewBox="0 0 24 24">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                         <polyline points="7 10 12 15 17 10" />
                         <line x1="12" y1="15" x2="12" y2="3" />
@@ -52,7 +69,7 @@
         </section>
 
         <!-- ABOUT -->
-        <section id="about">
+        <section id="about" class="reveal">
             <p class="sec-label">Who I am</p>
             <h2 class="sec-title">About Me</h2>
             <div class="sec-line"></div>
@@ -68,12 +85,22 @@
                     <p>Currently learning <b>AWS, Kubernetes & Terraform</b> to go deeper into cloud-native engineering.
                     </p>
                 </div>
-                <div class="code-card">
+                <div class="code-card glow-card">
                     <div class="code-header">
-                        <div class="code-dot" style="background:#FF5F56"></div>
-                        <div class="code-dot" style="background:#FFBD2E"></div>
-                        <div class="code-dot" style="background:#27C93F"></div>
-                        <span style="color:#8B949E;font-size:0.75rem;margin-left:8px">nithila.py</span>
+                        <div style="display:flex;gap:6px;">
+                            <div class="code-dot" style="background:#FF5F56"></div>
+                            <div class="code-dot" style="background:#FFBD2E"></div>
+                            <div class="code-dot" style="background:#27C93F"></div>
+                        </div>
+                        <span
+                            style="color:#8B949E;font-size:0.75rem;margin-left:8px;flex:1;text-align:center;">nithila.py</span>
+                        <button class="copy-btn" id="copy-code-btn" aria-label="Copy code" title="Copy code">
+                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
                     </div>
                     <div class="code-body">
                         <span class="kw">class</span> <span class="cn">Nithila</span>:<br>
@@ -107,7 +134,7 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="skills">
+        <section id="skills" class="reveal">
             <p class="sec-label">Tech Stack</p>
             <h2 class="sec-title">Skills</h2>
             <div class="sec-line"></div>
@@ -172,12 +199,12 @@
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects">
+        <section id="projects" class="reveal">
             <p class="sec-label">What I've built</p>
             <h2 class="sec-title">Projects</h2>
             <div class="sec-line"></div>
             <div class="proj-grid">
-                <div class="proj-card proj-highlight">
+                <div class="proj-card proj-highlight glow-card">
                     <div class="proj-icon">🤖</div>
                     <h3>Telegram GDrive Bot</h3>
                     <p>Telegram bot deployed on VPS with 24/7 uptime, automating file workflows via Google Drive API
@@ -190,7 +217,7 @@
                     </div>
                     <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
                 </div>
-                <div class="proj-card">
+                <div class="proj-card glow-card">
                     <div class="proj-icon">🔐</div>
                     <h3>Password Manager Bot</h3>
                     <p>A cloud-hosted Telegram bot for secure credential handling with command-based automation and
@@ -203,7 +230,7 @@
                     </div>
                     <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
                 </div>
-                <div class="proj-card">
+                <div class="proj-card glow-card">
                     <div class="proj-icon">🌐</div>
                     <h3>PathFinder+ Career Platform</h3>
                     <p>Full-stack career platform built with an Agile team, featuring a REST API backend and modern
@@ -216,7 +243,7 @@
                     </div>
                     <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
                 </div>
-                <div class="proj-card">
+                <div class="proj-card glow-card">
                     <div class="proj-icon">📚</div>
                     <h3>A/L Learning Platform</h3>
                     <p>Independently deployed educational platform maintained for the student community, serving
@@ -232,12 +259,12 @@
         </section>
 
         <!-- EXPERIENCE -->
-        <section id="experience">
+        <section id="experience" class="reveal">
             <p class="sec-label">Work history</p>
             <h2 class="sec-title">Experience</h2>
             <div class="sec-line"></div>
             <div class="exp-list">
-                <div class="exp-card">
+                <div class="exp-card glow-card">
                     <div class="exp-header">
                         <span class="exp-title">Automation & Bot Developer</span>
                         <span class="exp-date">2021 – Present</span>
@@ -246,7 +273,7 @@
                         Integrating Google Drive API and third-party cloud services, and building automated pipelines
                         that eliminate manual task execution.</p>
                 </div>
-                <div class="exp-card">
+                <div class="exp-card glow-card">
                     <div class="exp-header">
                         <span class="exp-title">Freelance Web Developer</span>
                         <span class="exp-date">2019 – Present</span>
@@ -259,7 +286,7 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact">
+        <section id="contact" class="reveal">
             <p class="sec-label">Let's connect</p>
             <h2 class="sec-title">Get In Touch</h2>
             <div class="sec-line"></div>
@@ -277,6 +304,29 @@
     </main>
 
     <footer>Built with love · Nithila Thiranagama · 2025</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <!-- Terminal Easter Egg -->
+    <div id="terminal-overlay">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="mac-btns">
+                    <span class="mac-btn close" id="term-close"></span>
+                    <span class="mac-btn min"></span>
+                    <span class="mac-btn max"></span>
+                </div>
+                <div class="terminal-title">nithila@devops:~</div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <div>Welcome to Nithila OS v1.0.0</div>
+                <div>Type <span style="color:#79C0FF">help</span> to see available commands.</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">nithila@devops:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
