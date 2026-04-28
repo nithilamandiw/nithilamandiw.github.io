@@ -35,8 +35,13 @@
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
         </div>
     </nav>
 
@@ -47,90 +52,42 @@
             <div class="badge-row reveal delay-1">
                 <span class="badge badge-green"><span class="dot dot-green"></span>Open to Internships</span>
                 <span class="badge badge-blue">BSc Computer Science · UoW</span>
-                <span class="badge badge-purple">Galle, Sri Lanka</span>
             </div>
             <h1 class="reveal delay-2">Hi, I'm<br><span class="grad-text">Nithila Thiranagama</span></h1>
             <div class="role-anim reveal delay-3" id="role-anim">I build <span id="role-word">CI/CD pipelines</span>
             </div>
             <p class="hero-desc reveal delay-4">Aspiring Cloud & DevOps Engineer passionate about automating everything,
-                deploying on
-                Linux/VPS, and building full-stack products. Freelancing since 2019, shipping bots & pipelines since
-                2021.</p>
+                deploying on Linux/VPS, and building full-stack products. Freelancing since 2019, shipping bots &
+                pipelines since 2021.</p>
             <div class="btn-row reveal delay-5">
-                <a href="https://github.com/nithilamandiw" class="btn btn-primary" target="_blank">View GitHub</a>
-                <a href="mailto:nithilamandiw@gmail.com" class="btn btn-outline">Email Me</a>
-                <a href="nithila-madiw.pdf" class="btn btn-cv" download="nithila-thiranagama-cv.pdf"><svg
-                        viewBox="0 0 24 24">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" y1="15" x2="12" y2="3" />
-                    </svg>Download CV</a>
+                <a href="nithila-madiw.pdf" class="btn btn-outline" download="nithila-thiranagama-cv.pdf">Download CV</a>
+                <a href="#contact" class="btn btn-contact">Contact Info</a>
+            </div>
+            <div class="social-icons reveal delay-5">
+                <a href="https://linkedin.com/in/nithila-mandiw" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://github.com/nithilamandiw" target="_blank" class="social-icon" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="mailto:nithilamandiw@gmail.com" class="social-icon" aria-label="Email">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
             </div>
         </section>
 
         <!-- ABOUT -->
         <section id="about" class="reveal">
-            <p class="sec-label">Who I am</p>
+            <p class="sec-label">Get To Know More</p>
             <h2 class="sec-title">About Me</h2>
             <div class="sec-line"></div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm a <b>Computer Science undergrad</b> at the University of Westminster, UK, building
-                        cloud-native tools and automations from my base in Galle, Sri Lanka.</p>
-                    <p>I've been deploying on <b>VPS/Linux servers</b> since 2021 - managing uptime, configs, and
-                        process automation. I started <b>freelance web development</b> even earlier, in 2019, shipping
-                        full-stack apps for clients.</p>
-                    <p>My sweet spot is where <b>cloud infrastructure meets code</b> - writing CI/CD pipelines, spinning
-                        up bots, integrating APIs, and making systems run themselves.</p>
-                    <p>Currently learning <b>AWS, Kubernetes & Terraform</b> to go deeper into cloud-native engineering.
-                    </p>
-                </div>
-                <div class="code-card glow-card">
-                    <div class="code-header">
-                        <div style="display:flex;gap:6px;">
-                            <div class="code-dot" style="background:#FF5F56"></div>
-                            <div class="code-dot" style="background:#FFBD2E"></div>
-                            <div class="code-dot" style="background:#27C93F"></div>
-                        </div>
-                        <span
-                            style="color:#8B949E;font-size:0.75rem;margin-left:8px;flex:1;text-align:center;">nithila.py</span>
-                        <button class="copy-btn" id="copy-code-btn" aria-label="Copy code" title="Copy code">
-                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="code-body">
-                        <span class="kw">class</span> <span class="cn">Nithila</span>:<br>
-                        &nbsp;&nbsp;<span class="fn">name</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span
-                            class="st">"Nithila Thiranagama"</span><br>
-                        &nbsp;&nbsp;<span class="fn">uni</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span
-                            class="st">"University of Westminster"</span><br>
-                        &nbsp;&nbsp;<span class="fn">location</span> = <span class="st">"Galle, Sri Lanka
-                            🇱🇰"</span><br>
-                        &nbsp;&nbsp;<span class="fn">since</span> &nbsp;&nbsp;&nbsp;&nbsp;= {<span
-                            class="st">"vps"</span>: <span class="val">2021</span>, <span class="st">"freelance"</span>:
-                        <span class="val">2019</span>}<br>
-                        &nbsp;&nbsp;<span class="fn">learning</span> = [<span class="st">"AWS"</span>, <span
-                            class="st">"Kubernetes"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                            class="st">"Terraform"</span>, <span class="st">"GCP"</span>]<br>
-                        &nbsp;&nbsp;<span class="fn">open_to</span> &nbsp;= [<span class="st">"Cloud
-                            Internship"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                            class="st">"DevOps Internship"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                            class="st">"Backend Engineering"</span>]<br>
-                        &nbsp;&nbsp;<span class="fn">fun_fact</span> = <span class="st">"automates before
-                            doing"</span><br>
-                        <br>
-                        <span class="cm"># reach me at:</span><br>
-                        <span class="fn">email</span> = <span class="st">"nithilamandiw@gmail.com"</span>
-                    </div>
-                </div>
+            <div class="edu-card glow-card">
+                <div class="edu-icon">🎓</div>
+                <h3 class="edu-title">Education</h3>
+                <p class="edu-detail">BSc (Hons) Computer Science</p>
+                <p class="edu-detail">at University of Westminster ( IIT Sri Lanka )</p>
             </div>
+            <p class="about-desc">Aspiring Cloud & DevOps Engineer and Computer Science Student proficient in Python, JavaScript, and Java. I build automated pipelines, deploy bots on VPS/Linux servers, and ship full-stack applications. Freelancing since 2019 and managing cloud infrastructure since 2021. Currently learning AWS, Kubernetes & Terraform with a strong commitment to cloud-native engineering. Let's connect!</p>
         </section>
 
         <!-- SKILLS -->
@@ -139,8 +96,8 @@
             <h2 class="sec-title">Skills</h2>
             <div class="sec-line"></div>
             <div class="skill-groups">
-                <div class="skill-group">
-                    <h4 style="color:#7DD3FC">Cloud & DevOps</h4>
+                <div class="skill-group glow-card">
+                    <h4 style="color:#7DD3FC">☁️ Cloud & DevOps</h4>
                     <div class="pills">
                         <span class="pill p-sky">Linux / VPS</span>
                         <span class="pill p-sky">GitHub Actions</span>
@@ -151,16 +108,16 @@
                         <span class="pill p-sky">CI/CD</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4 style="color:#C4B5FD">Languages</h4>
-                    <div class="pills">
+                <div class="skill-group glow-card">
+                    <h4 style="color:#C4B5FD">💻 Languages</h4>
+                    <div class="pills" style="max-width:280px;margin:0 auto;">
                         <span class="pill p-violet">Python</span>
                         <span class="pill p-violet">JavaScript</span>
                         <span class="pill p-violet">Java</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4 style="color:#FDA4AF">Backend & Automation</h4>
+                <div class="skill-group glow-card">
+                    <h4 style="color:#FDA4AF">⚙️ Backend & Automation</h4>
                     <div class="pills">
                         <span class="pill p-rose">FastAPI</span>
                         <span class="pill p-rose">REST APIs</span>
@@ -169,8 +126,8 @@
                         <span class="pill p-rose">Automation / Bots</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4 style="color:#6EE7B7">Frontend</h4>
+                <div class="skill-group glow-card">
+                    <h4 style="color:#6EE7B7">🎨 Frontend</h4>
                     <div class="pills">
                         <span class="pill p-emerald">React</span>
                         <span class="pill p-emerald">Next.js</span>
@@ -178,16 +135,16 @@
                         <span class="pill p-emerald">HTML5</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4 style="color:#FCD34D">Databases</h4>
+                <div class="skill-group glow-card">
+                    <h4 style="color:#FCD34D">🗄️ Databases</h4>
                     <div class="pills">
                         <span class="pill p-amber">PostgreSQL</span>
                         <span class="pill p-amber">MongoDB</span>
                         <span class="pill p-amber">SQLite</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4 style="color:#A5B4FC">Tools</h4>
+                <div class="skill-group glow-card">
+                    <h4 style="color:#A5B4FC">🛠️ Tools</h4>
                     <div class="pills">
                         <span class="pill p-indigo">Git</span>
                         <span class="pill p-indigo">VS Code</span>
@@ -207,53 +164,64 @@
                 <div class="proj-card proj-highlight glow-card">
                     <div class="proj-icon">🤖</div>
                     <h3>Telegram GDrive Bot</h3>
-                    <p>Telegram bot deployed on VPS with 24/7 uptime, automating file workflows via Google Drive API
-                        integration. Built for real continuous use.</p>
                     <div class="proj-tags">
                         <span class="proj-tag">Python</span>
                         <span class="proj-tag">Google Drive API</span>
                         <span class="proj-tag">Linux/VPS</span>
                         <span class="proj-tag">Telegram API</span>
                     </div>
-                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
+                    <p>Telegram bot deployed on VPS with 24/7 uptime, automating file workflows via Google Drive API
+                        integration. Built for real continuous use.</p>
+                    <a href="https://github.com/nithilamandiw/telegram-drive-bot" target="_blank" class="proj-link">View on GitHub →</a>
                 </div>
                 <div class="proj-card glow-card">
                     <div class="proj-icon">🔐</div>
                     <h3>Password Manager Bot</h3>
-                    <p>A cloud-hosted Telegram bot for secure credential handling with command-based automation and
-                        encryption.</p>
                     <div class="proj-tags">
-                        <span class="proj-tag">Python</span>
+                        <span class="proj-tag">JavaScript</span>
                         <span class="proj-tag">Telegram API</span>
                         <span class="proj-tag">Encryption</span>
                         <span class="proj-tag">Cloud</span>
                     </div>
-                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
+                    <p>A cloud-hosted Telegram bot for secure credential handling with command-based automation and
+                        encryption.</p>
+                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub →</a>
                 </div>
                 <div class="proj-card glow-card">
                     <div class="proj-icon">🌐</div>
                     <h3>PathFinder+ Career Platform</h3>
-                    <p>Full-stack career platform built with an Agile team, featuring a REST API backend and modern
-                        React frontend.</p>
                     <div class="proj-tags">
                         <span class="proj-tag">Next.js</span>
                         <span class="proj-tag">React</span>
                         <span class="proj-tag">FastAPI</span>
                         <span class="proj-tag">Tailwind CSS</span>
                     </div>
-                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
+                    <p>Full-stack career platform built with an Agile team, featuring a REST API backend and modern
+                        React frontend.</p>
+                    <a href="https://github.com/nithilamandiw/SDGP-CS-116-NM" target="_blank" class="proj-link">View on GitHub →</a>
                 </div>
                 <div class="proj-card glow-card">
                     <div class="proj-icon">📚</div>
                     <h3>A/L Learning Platform</h3>
-                    <p>Independently deployed educational platform maintained for the student community, serving
-                        learners with curated content.</p>
                     <div class="proj-tags">
                         <span class="proj-tag">HTML</span>
                         <span class="proj-tag">CSS</span>
                         <span class="proj-tag">JavaScript</span>
                     </div>
-                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub ↗</a>
+                    <p>Independently deployed educational platform maintained for the student community, serving
+                        learners with curated content.</p>
+                    <a href="https://github.com/nithilamandiw" target="_blank" class="proj-link">View on GitHub →</a>
+                </div>
+                <div class="proj-card glow-card">
+                    <div class="proj-icon">💼</div>
+                    <h3>Personal Portfolio</h3>
+                    <div class="proj-tags">
+                        <span class="proj-tag">HTML</span>
+                        <span class="proj-tag">CSS</span>
+                        <span class="proj-tag">JavaScript</span>
+                    </div>
+                    <p>Web application to showcase my skills and projects with modern responsive design and interactive animations.</p>
+                    <a href="https://github.com/nithilamandiw/nithilamandiw.github.io" target="_blank" class="proj-link">View on GitHub →</a>
                 </div>
             </div>
         </section>
@@ -303,7 +271,7 @@
 
     </main>
 
-    <footer>Built with love · Nithila Thiranagama · 2025</footer>
+    <footer>© 2026 Nithila Thiranagama. All Rights Reserved.</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
     <!-- Terminal Easter Egg -->
