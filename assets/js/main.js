@@ -67,6 +67,40 @@ if (navbar) {
     });
 }
 
+// ── Contact Form ──
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector(".form-submit");
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+        formStatus.textContent = "";
+        formStatus.className = "form-status";
+        try {
+            const res = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+            });
+            const data = await res.json();
+            if (data.success) {
+                formStatus.textContent = "✓ Message sent successfully!";
+                formStatus.classList.add("success");
+                contactForm.reset();
+            } else {
+                formStatus.textContent = "✗ Something went wrong. Try again.";
+                formStatus.classList.add("error");
+            }
+        } catch (err) {
+            formStatus.textContent = "✗ Network error. Please try again.";
+            formStatus.classList.add("error");
+        }
+        submitBtn.textContent = "Send Message";
+        submitBtn.disabled = false;
+    });
+}
+
 // ── Copy Code ──
 const copyBtn = document.getElementById("copy-code-btn");
 if (copyBtn) {
